@@ -1,8 +1,8 @@
 body{
     margin: 0px;
-    padding: 0px
+    padding: 0px;
+    display: block
 }
-
 
 .background-slide,
 .background-slide:after{
@@ -53,6 +53,7 @@ body{
 }
 
 .nav{
+    
     overflow: hidden;
     float: left;
     margin: 0px;
@@ -92,4 +93,54 @@ body{
 
 .float-dock-slider{
     
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    
 }
+
+.float-dock-slider ul{
+    display: block;
+    padding-top: 50px;
+    clear: both;
+    list-style-type: none;
+    
+}
+.float-dock-slider li{
+    position: relative;
+    clear: both
+}
+.wrap{
+    display: block
+}
+
+.image-slider{
+    position: relative;
+    clear: both;
+    float: left;
+    width: 100%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow: hidden
+}
+
+.image-slider ul{
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+.image-slider li{
+    clear: both;
+    display: inline;
+}
+
+#image-slider{
+    
+}
+
