@@ -1,10 +1,12 @@
 body{
     margin: 0px;
     padding: 0px;
-    display: block
+    display: block;
+    height: 100%;
+    
 }
 
-.background-slide,
+/*.background-slide,
 .background-slide:after{
     position: fixed;
     width: 100%;
@@ -32,8 +34,7 @@ body{
     z-index: 0;
     animation: imageAnimation 36s linear infinite 0s
 }
-
-.background-slide li:nth-child(1) span{
+*.background-slide li:nth-child(1) span{
     background-image: url(../img/slika1.jpg)
 }
 .background-slide li:nth-child(2) span{
@@ -50,7 +51,7 @@ body{
 }
 .background-slide li:nth-child(3) div{
     animation-delay: 12s
-}
+}*/
 
 .nav{
     
@@ -92,10 +93,9 @@ body{
 }
 
 .float-dock-slider{
-    
+    overflow: auto;
     width: 100%;
     clear: both;
-    overflow: hidden;
     float: left;
     margin: 0px;
     padding: 0px;
@@ -109,10 +109,21 @@ body{
     clear: both;
     list-style-type: none;
     
+    
 }
 .float-dock-slider li{
     position: relative;
-    clear: both
+    clear: both;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    
+}
+
+.float-dock-slider li img:hover{
+    
 }
 .wrap{
     display: block
@@ -122,25 +133,58 @@ body{
     position: relative;
     clear: both;
     float: left;
+    padding-right: 120px;
+    padding-left: 120px;
+    margin-left: 0px; 
     width: 100%;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
     box-sizing:border-box;
     overflow: hidden
 }
 
 .image-slider ul{
+    
     list-style-type: none;
     float: left;
     width: 100%;
     margin: 0;
+    overflow-x: scroll;
 }
 .image-slider li{
+    
     clear: both;
     display: inline;
 }
 
-#image-slider{
+#image-slider{   
+}
+
+.boxeditems,
+.boxeditems:hover{
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 5px solid gray;
+    display: inline-block
+}
+
+.boxeditems img :hover{
     
+}
+
+.container{
+    
+     background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#background{
+     background-image: url(../img/slika1.jpg);
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
